@@ -23,7 +23,7 @@ export const callOllamaAPI = async (context, query) => {
   
     try {
       const response = await axios.post(url, {
-        model: 'llama3.1',  
+        model: 'gemma2:2b',  
         messages: messages,
         "stream": false
       }, {
